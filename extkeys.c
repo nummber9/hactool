@@ -455,9 +455,6 @@ void extkeys_initialize_settings(hactool_settings_t *settings, FILE *f) {
                     }
                 }
             }
-            if (!matched_key && !settings->skip_key_warnings) {
-                fprintf(stderr, "[WARN]: Failed to match key \"%s\", (value \"%s\")\n", key, value);
-            }
         }
     }
 }
